@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form NodeJS</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Contact</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <form method="POST" action="/send">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailBody">Mensagem</label>
+                        <textarea class="form-control" id="emailBody" name="emailBody" rows="6"></textarea>
+                    </div>
+                    <div class="float-right"> <!-- align button to the right -->
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
